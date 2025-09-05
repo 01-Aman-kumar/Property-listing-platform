@@ -265,6 +265,41 @@ const sampleListings = [
     price: 1800,
     location: "Costa Rica",
   },
+  {
+    title: "2BHK Apartment in Noida",
+    price: 2500000,
+    location: "Sector 62, Noida",
+    image: "https://images.unsplash.com/photo-1756806381989-d10b7f569e89?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "Spacious 2BHK with parking and security."
+  },
+  {
+    title: "3BHK Luxury Flat in Delhi",
+    price: 5500000,
+    location: "Dwarka, Delhi",
+    image: "https://images.unsplash.com/photo-1756819753334-3076f06c0395?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "Modern 3BHK apartment with gym, pool, and 24/7 security."
+  },
+  {
+    title: "1BHK Affordable Apartment",
+    price: 1500000,
+    location: "Indirapuram, Ghaziabad",
+    image: "https://images.unsplash.com/photo-1600992045264-136a22de917e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTgyfHxwcm9wZXJ0aWVzfGVufDB8fDB8fHww",
+    "description": "Compact 1BHK ideal for students and working professionals."
+  },
+  {
+    title: "Villa in Greater Noida",
+    price: 7500000,
+    location: "Alpha 2, Greater Noida",
+    image: "https://images.unsplash.com/photo-1723110994499-df46435aa4b3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cHJvcGVydGllc3xlbnwwfHwwfHx8MA%3D%3D",
+    "description": "Spacious 4BHK villa with garden and private parking."
+  },
+  {
+    title: "Studio Apartment in Gurgaon",
+    price: 2200000,
+    location: "Sector 45, Gurgaon",
+    image: "https://images.unsplash.com/photo-1635108199650-8115b597e283?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTI0fHxwcm9wZXJ0aWVzfGVufDB8fDB8fHww",
+    "description": "Fully furnished studio apartment close to CyberHub."
+  }
 ];
 
 module.exports = { data: sampleListings };

@@ -21,7 +21,7 @@ export default function Banner() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1600&q=80"
+          src="https://images.unsplash.com/photo-1723110994499-df46435aa4b3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cHJvcGVydGllc3xlbnwwfHwwfHx8MA%3D%3D"
           alt="Modern Villa"
           style={{ height: "400px", objectFit: "cover" }}
         />
