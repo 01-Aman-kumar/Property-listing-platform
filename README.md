@@ -21,7 +21,7 @@ Bonus: Search & filter properties.
 
  Tech Stack
 
-Frontend:  React, Tailwind CSS
+Frontend:  React, Bootstrap CSS
 
 Backend: Node.js, Express.js
 
@@ -32,11 +32,11 @@ Authentication: JWT
 Installation & Setup
 Clone the repository
 git clone https://github.com/your-username/property-listing-platform.git
-cd Project
+cd client
 npm install
 
 2️⃣ Backend Setup
-cd backend
+cd server
 npm install
 
 
@@ -44,7 +44,7 @@ Create a .env file in /backend and add:
 
 MONGO_URI=your-mongodb-connection-string
 JWT_SECRET=your-secret-key
-PORT=5000
+PORT=8080
 
 
 Run the backend:
