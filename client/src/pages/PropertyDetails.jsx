@@ -49,7 +49,7 @@ export default function PropertyDetail() {
           <h4 className="text-primary">₹ {property.price.toLocaleString()}</h4>
           <p><strong>Location:</strong> {property.location}</p>
           <p>{property.description}</p>
-          <Button variant="success" size="lg">Contact Seller</Button>
+          <Link to={"/contact"} className='btn btn-primary'>Contact Us</Link>
         </Col>
       </Row>
 

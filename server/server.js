@@ -6,11 +6,13 @@ const cors = require('cors');
 const mongoose=require("mongoose");
 const authRoutes = require('./routes/auth');
 const propRoutes = require('./routes/properties');
+const contactRoutes=require("./routes/contactRoutes");
 
 app.use(cors());
 app.use(express.json());
 app.use('/api/auth', authRoutes);
 app.use('/api/properties', propRoutes);
+app.use("/api/contact-seller", contactRoutes);
 
 
 main().then(()=>{

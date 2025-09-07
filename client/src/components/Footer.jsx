@@ -9,14 +9,14 @@ export default function Footer() {
     //   </div>
     // </footer>
     <footer>
-      <div class="f-info">
-        <div class="f-info-socials">
-          <i class="fa-brands fa-square-facebook"></i>
-          <i class="fa-brands fa-square-linkedin"></i>
-          <i class="fa-brands fa-square-github"></i>
+      <div className="f-info">
+        <div className="f-info-socials">
+          <i className="fa-brands fa-square-facebook"></i>
+          <i className="fa-brands fa-square-linkedin"></i>
+          <i className="fa-brands fa-square-github"></i>
         </div>
-        <div class="f-info-brand">&copy; Wanderlust Private Limited</div>
-        <div class="f-info-links">
+        <div className="f-info-brand">&copy; Wanderlust Private Limited</div>
+        <div className="f-info-links">
           <a href="/privacy">Privacy</a>
           <a href="/terms">Terms</a>
         </div>

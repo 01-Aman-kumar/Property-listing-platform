@@ -7,6 +7,8 @@ import Login from './pages/Login';
 import AppNavbar from './components/Navbar';
 import Footer from './components/Footer';
 import { setAuthToken } from './api';
+import ContactSeller from './pages/ContactSeller';
+import AdminMessages from './pages/AdminMessages';
 
 function App() {
   useEffect(() => {
@@ -24,6 +26,8 @@ function App() {
           <Route path="/property/:id" element={<PropertyDetails />} />
           <Route path="/admin" element={<Admin />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/contact" element={<ContactSeller />} />
+          <Route path="/admin/messages" element={<AdminMessages />} />
         </Routes>
       </div>
       <Footer />

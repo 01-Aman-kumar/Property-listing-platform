@@ -58,7 +58,7 @@ router.post('/', auth, async (req, res) => {
     // In real app validate req.user role
     const { title, price, location, image, description } = req.body;
     if (!title || !price || !location) {
-      return res.status(400).json({ message: 'All required fields missing' });
+      return res.status(400).json({ message: 'Plz enter valid details' });
     }
     const prop = new Property({ title, price, location, image, description });
     await prop.save();
@@ -68,5 +68,6 @@ router.post('/', auth, async (req, res) => {
     res.status(500).json({ message: 'Server error' });
   }
 });
+
 
 module.exports=router;
