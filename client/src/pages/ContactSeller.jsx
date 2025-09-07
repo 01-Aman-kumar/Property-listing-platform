@@ -48,7 +48,7 @@ const ContactSeller = () => {
     setStatus(data.message || "Message sent successfully!");
     setStatusType("success");
     setFormData({ name: "", email: "", message: "" });
-    navigate("/");
+    // navigate("/");
   } catch (err) {
     if (err.response && err.response.data?.error) {
       setStatus(err.response.data.error);

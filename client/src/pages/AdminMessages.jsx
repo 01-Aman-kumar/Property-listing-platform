@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import api from "../api";
 
 const AdminMessages = () => {
   const [messages, setMessages] = useState([]);
@@ -6,16 +7,15 @@ const AdminMessages = () => {
   const [search, setSearch] = useState("");
 
   const fetchMessages = async () => {
-    try {
-      const res = await fetch("http://localhost:8080/api/contact-seller");
-      const data = await res.json();
-      setMessages(data);
-      setLoading(false);
-    } catch (err) {
-      console.error(err);
-      setLoading(false);
-    }
-  };
+  try {
+    const { data } = await api.get("/api/contact-seller");
+    setMessages(data);
+  } catch (err) {
+    console.error(err);
+  } finally {
+    setLoading(false);
+  }
+};
 
   useEffect(() => {
     fetchMessages();
@@ -23,23 +23,21 @@ const AdminMessages = () => {
 
   // Delete a message
   const handleDelete = async (id) => {
-    if (!window.confirm("Are you sure you want to delete this message?")) return;
+  if (!window.confirm("Are you sure you want to delete this message?")) return;
 
-    try {
-      const res = await fetch(`http://localhost:8080/api/contact-seller/${id}`, {
-        method: "DELETE",
-      });
-      const data = await res.json();
-      if (res.ok) {
-        setMessages(messages.filter((msg) => msg._id !== id));
-      } else {
-        alert(data.error || "Failed to delete");
-      }
-    } catch (err) {
-      console.error(err);
+  try {
+    await api.delete(`/api/contact-seller/${id}`);
+    // Remove deleted message from state
+    setMessages((prevMessages) => prevMessages.filter((msg) => msg._id !== id));
+  } catch (err) {
+    console.error("Delete error:", err);
+    if (err.response?.data?.error) {
+      alert(err.response.data.error);
+    } else {
       alert("Server error. Try again later.");
     }
-  };
+  }
+};
 
   // Filter messages based on search input
   const filteredMessages = messages.filter(
