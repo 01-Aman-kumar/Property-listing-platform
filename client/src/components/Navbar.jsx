@@ -76,6 +76,7 @@ export default function AppNavbar() {
           {/* Left */}
           <Nav className="me-auto">
             <Nav.Link as={Link} to="/">Home</Nav.Link>
+            <Nav.Link as={Link} to="/contact">Contact Us</Nav.Link>
             {token && <Nav.Link as={Link} to="/admin">Add New Property</Nav.Link>}
             {token && <Nav.Link as={Link} to="/admin/messages">User Message</Nav.Link>}
           </Nav>
